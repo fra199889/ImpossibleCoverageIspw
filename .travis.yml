@@ -1,0 +1,35 @@
+  
+dist: trusty
+language: java
+jdk:
+ - oraclejdk13
+
+addons:
+ sonarcloud:
+  organization: "fra199889"
+  token:
+   secure: "934a70a020d807e66f678d934fb361f70863ac3f"
+
+script: 
+
+- ant build
+- sonar-scanner
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
